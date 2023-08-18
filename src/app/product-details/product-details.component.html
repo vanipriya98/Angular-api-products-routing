@@ -1,0 +1,20 @@
+<div *ngIf="loading">
+    Loading Products
+</div>
+
+<div *ngIf="error">
+  error  fetching Products
+</div>
+
+<div *ngIf="!loading && !error">
+    <div class="productDetails">
+       <img [src]="product.img">
+       <h2>Id    : {{product.Id}}</h2>
+       <p>Title  : {{product.Title}} </p>
+       <p>Maker  : {{product.Maker}}</p>
+       <p>Desc   : {{product.Description}}</p>
+       
+      
+    </div>
+</div>
+

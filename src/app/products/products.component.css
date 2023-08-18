@@ -1,0 +1,27 @@
+body{
+    margin-left: 3%;
+    background-color: azure;
+}
+.product-desc{
+    padding-top: 2px;
+    width: 300px;
+    border:1px solid rgba(116, 118, 118, 0.802)
+}
+h2 ,p{
+    padding-left:20px;
+} 
+.product-desc img{
+    justify-content: center;
+    width:300px;
+    height:250px;
+    padding-left: 0px;
+}
+
+.productCards{
+    
+    justify-content: space-around;
+    display: flex;
+    gap:50px;
+    flex-wrap: wrap;
+    
+}

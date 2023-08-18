@@ -1,0 +1,16 @@
+
+<div *ngIf="!loading && !error " class="productCards">
+    <div *ngFor="let product of products" class="product-desc">
+        <a [routerLink]="['/products',product.Id]">
+       <img [src]="product.img" alt="{{product.Id}}">
+        <br>
+       <h2>Id : {{product.Id}}</h2>
+       </a>
+       <p>Title : {{product.Title}} </p>
+       <p>Maker :{{product.Maker}}</p>
+       <p>Desc  :{{product.Description}}</p>
+       
+       
+    </div>
+</div>
+
